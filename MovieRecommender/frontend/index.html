@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>MovieMatch — Discover Better Movies</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="logo" href="/">Movie<span>Match.</span></a>
+
+    <nav>
+      <button id="home-btn" class="nav-btn active">
+        Discover
+      </button>
+      <button id="watchlist-btn" class="nav-btn">
+        My Watchlist <span id="watch-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">✦ YOUR PERSONAL MOVIE GUIDE</span>
+
+        <h1>
+          Your next favorite<br>
+          movie <em>starts here.</em>
+        </h1>
+
+        <p>
+          Loved a movie? Find five more worth watching.
+          Powered by machine learning.
+        </p>
+
+        <form id="movie-form" autocomplete="off">
+          <div class="search-wrap">
+            <input
+              id="movie-input"
+              type="text"
+              placeholder="Try Avatar, Inception..."
+              aria-label="Search movies"
+              aria-autocomplete="list"
+              aria-controls="suggestions"
+              required
+            >
+            <div id="suggestions"
+                 class="suggestions"
+                 role="listbox"
+                 hidden></div>
+          </div>
+
+          <button type="submit" class="primary-btn">
+            Find Movies →
+          </button>
+        </form>
+
+        <div class="hero-footer">
+          <span>✦ Content-based recommendations</span>
+          <span>✦ Discover something new</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CURATED FOR YOU</span>
+          <h2 id="section-title">Your recommendations</h2>
+        </div>
+        <span id="result-count"></span>
+      </div>
+
+      <p id="message" role="status" aria-live="polite">
+        Search for a movie to get started.
+      </p>
+
+      <div id="results" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <div id="movie-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+
+    <section class="modal-panel"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modal-title"
+             tabindex="-1">
+      <button id="close-modal"
+              class="close-btn"
+              aria-label="Close details">×</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+
+  <footer>
+    <span>MovieMatch © 2026</span>
+    <span>
+      Movie metadata provided by TMDB.
+      This product uses the TMDB API but is not
+      endorsed or certified by TMDB.
+    </span>
+  </footer>
+</body>
+</html>

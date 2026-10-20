@@ -1,0 +1,92 @@
+{
+  "titan a.e.": {
+    "id": 7450,
+    "title": "Titan A.E.",
+    "poster": "https://image.tmdb.org/t/p/w500/el2iHk3LTJWfEnwrvcRkvWY501G.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/t0VWB5Kc5o38w5YYgzReArrGiZ8.jpg",
+    "rating": 6.632,
+    "year": "2000",
+    "overview": "A young man finds out that he holds the key to restoring hope and ensuring survival for the human race, while an alien species called the Drej are bent on mankind's destruction.",
+    "trailer": "https://www.youtube.com/watch?v=mK7huyUD3i8"
+  },
+  "aliens vs predator: requiem": {
+    "id": 440,
+    "title": "Aliens vs Predator: Requiem",
+    "poster": "https://image.tmdb.org/t/p/w500/5iTwPDNtvK6ZZF607BHBbU3HO0B.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jXntuh47VtKLeoyBQ268rv24Igw.jpg",
+    "rating": 5.16,
+    "year": "2007",
+    "overview": "After a horrifying PredAlien crash-lands near a small Colorado town, killing everyone it encounters and producing countless Alien offspring, a lone Predator arrives to \"clean up\" the infestation.",
+    "trailer": "https://www.youtube.com/watch?v=XbTWLrZLYmU"
+  },
+  "independence day": {
+    "id": 602,
+    "title": "Independence Day",
+    "poster": "https://image.tmdb.org/t/p/w500/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/kFI1oF6KVnLEbUT7yLIbKXeyvu.jpg",
+    "rating": 6.921,
+    "year": "1996",
+    "overview": "Strange phenomena surface around the globe. The skies ignite. Terror races through the world's major cities. As these extraordinary events unfold, it becomes increasingly clear that a force of incredible magnitude has arrived. Its mission: total annihilation over the Fourth of July weekend. The last hope to stop the destruction is an unlikely group of people united by fate and unimaginable circumstances.",
+    "trailer": "https://www.youtube.com/watch?v=qHH7VxJJ2k8"
+  },
+  "ender's game": {
+    "id": 80274,
+    "title": "Ender's Game",
+    "poster": "https://image.tmdb.org/t/p/w500/pVcRI5YKnkkgaAD876jBeKb189d.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/zWvOs6lepfOI0dPa1ANVcdbkBuY.jpg",
+    "rating": 6.594,
+    "year": "2013",
+    "overview": "Based on the classic novel by Orson Scott Card, Ender's Game is the story of the Earth's most gifted children training to defend their homeplanet in the space wars of the future.",
+    "trailer": "https://www.youtube.com/watch?v=KecVAykkfCM"
+  },
+  "small soldiers": {
+    "id": 11551,
+    "title": "Small Soldiers",
+    "poster": "https://image.tmdb.org/t/p/w500/2nuUjSzHsoYlRvTPmLo7m7gCQry.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/gdQk5g4TC95957Xs4xGbcOBnG56.jpg",
+    "rating": 6.567,
+    "year": "1998",
+    "overview": "When missile technology is used to enhance toy action figures, the toys soon begin to take their battle programming too seriously.",
+    "trailer": "https://www.youtube.com/watch?v=YwIt5wagRsg"
+  },
+  "the dark knight": {
+    "id": 155,
+    "title": "The Dark Knight",
+    "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+    "rating": 8.538,
+    "year": "2008",
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "trailer": "https://www.youtube.com/watch?v=_PZpmTj1Q8Q"
+  },
+  "batman & robin": {
+    "id": 415,
+    "title": "Batman & Robin",
+    "poster": "https://image.tmdb.org/t/p/w500/i7hEUpDuMN2LOrCEifFyGSHZQSY.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/kEuQWHte2erRpAICrYqkAZaZAAY.jpg",
+    "rating": 4.392,
+    "year": "1997",
+    "overview": "Batman and his sidekick Robin attempt to the foil the sinister schemes of a deranged set of new villains, most notably the melancholy Mr. Freeze, who wants to make Gotham City into an arctic region, and the sultry Poison Ivy, a botanical femme fatale. As the Dynamic Duo contend with these bad guys, a third hero, Batgirl, joins the ranks of the city's crime-fighters.",
+    "trailer": "https://www.youtube.com/watch?v=Zc7sjDHW2KY"
+  },
+  "the dark knight rises": {
+    "id": 49026,
+    "title": "The Dark Knight Rises",
+    "poster": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/c3OHQncTAnKFhdOTX7D3LTW6son.jpg",
+    "rating": 7.799,
+    "year": "2012",
+    "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+    "trailer": "https://www.youtube.com/watch?v=GAjBzu8ggi0"
+  },
+  "batman": {
+    "id": 268,
+    "title": "Batman",
+    "poster": "https://image.tmdb.org/t/p/w500/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rhc7OF7tC9HPu0X8DBKQJzaGRbu.jpg",
+    "rating": 7.234,
+    "year": "1989",
+    "overview": "Having witnessed his parents' brutal murder as a child, millionaire philanthropist Bruce Wayne fights crime in Gotham City disguised as Batman, a costumed hero who strikes fear into the hearts of villains. But when a deformed madman known as 'The Joker' seizes control of Gotham's criminal underworld, Batman must face his most ruthless nemesis ever while protecting both his identity and his love interest, reporter Vicki Vale.",
+    "trailer": "https://www.youtube.com/watch?v=ygK7sAavO0c"
+  }
+}
