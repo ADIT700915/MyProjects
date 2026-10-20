@@ -1,115 +1,80 @@
-# MovieMatch — Movie Recommendation System
+# Movie Recommendation System 🎬
 
-A content-based movie recommendation web application built using Python, FastAPI, and JavaScript. It suggests movies based on their similarity to a selected movie and displays additional information such as posters, ratings, release years, and descriptions.
+This is a movie recommendation website I built while learning machine learning and working with APIs.
 
-## Features
+The idea is simple: you select a movie you like, and the website suggests 5 similar movies. It also shows movie posters, ratings, descriptions, and trailers when available.
 
-- **Movie Recommendations:** Get five similar movie suggestions based on a selected movie.
-- **Movie Search:** Search for movies from the available dataset.
-- **Movie Details:** View posters, ratings, release years, and descriptions.
-- **Trailer Integration:** Access available YouTube trailers through TMDB.
-- **Metadata Caching:** Store fetched movie details locally to reduce repeated API requests.
-- **API Error Handling:** Retry requests when temporary network or server errors occur.
+## How it works
+
+I used content-based filtering to recommend movies.
+
+First, I worked with a movie dataset and processed the movie information using Python. Then I used CountVectorizer and cosine similarity to find how similar two movies are.
+
+When someone searches for a movie, the system finds it in the dataset and recommends the 5 movies with the highest similarity scores.
+
+I also connected the TMDB API to get movie posters and other details, since the original dataset doesn't contain all of that information.
 
 ## Tech Stack
 
-| Component | Technology |
-|---|---|
-| Programming Language | Python |
-| Backend | FastAPI |
-| Machine Learning | Scikit-learn, NumPy, Pandas |
-| Frontend | HTML, CSS, JavaScript |
-| Movie Metadata | TMDB API |
-| Server | Uvicorn |
+- **Python** – for the recommendation logic
+- **Pandas, NumPy, Scikit-learn** – for data processing and similarity calculation
+- **FastAPI** – for connecting the recommendation system with the website
+- **HTML, CSS, JavaScript** – for the frontend
+- **TMDB API** – for movie posters, ratings, descriptions, and trailers
 
-## How It Works
+## Features
 
-The recommendation system uses a content-based filtering approach.
+- Search for a movie
+- Get 5 similar movie recommendations
+- View movie posters and details
+- Watch available trailers
+- Cache movie details to avoid making the same API request again
 
-1. Movie features are processed into numerical representations using text vectorization.
-2. Cosine similarity is used to measure similarity between movies.
-3. When a user selects a movie, the system retrieves its similarity scores.
-4. The five most similar movies are returned as recommendations.
-5. TMDB provides additional details such as posters, ratings, and descriptions.
+## How to run it
 
-## Project Structure
-
-```text
-MovieRecommender/
-├── assets/
-│   ├── movies.csv
-│   └── similarity.npy
-├── backend/
-│   └── main.py
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── .env
-└── README.md
-```
-
-The `.env` file is used locally for API credentials and should not be committed to GitHub.
-
-## Installation and Setup
-
-### 1. Clone the repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/ADIT700915/MyProjects.git
 cd MyProjects/MovieRecommender
 ```
 
-### 2. Install dependencies
-
-Python 3.12 is recommended.
+**2. Install the required libraries**
 
 ```bash
-py -3.12 -m pip install fastapi uvicorn numpy pandas httpx python-dotenv scikit-learn
+py -3.12 -m pip install fastapi uvicorn pandas numpy scikit-learn httpx python-dotenv
 ```
 
-### 3. Configure TMDB API access
+**3. Set up the TMDB API**
 
-Create a `.env` file in the project directory and add your TMDB API Read Access Token:
+Create a `.env` file inside the `MovieRecommender` folder and add:
 
 ```env
-TMDB_READ_TOKEN=your_tmdb_read_access_token
+TMDB_READ_TOKEN=your_token_here
 ```
 
-You can obtain a token from [The Movie Database](https://www.themoviedb.org/settings/api).
+You can get the token from [TMDB](https://www.themoviedb.org/settings/api).
 
-### 4. Run the application
+**4. Run the project**
 
 ```bash
 py -3.12 -m uvicorn backend.main:app --reload
 ```
 
-Open the application in your browser:
+Now open `http://127.0.0.1:8000` in your browser.
 
-```text
-http://127.0.0.1:8000
-```
+## Things I learned
 
-## API Endpoints
+While building this project, I got to understand how content-based recommendation systems work and how a machine learning model can be connected to a web application.
 
-| Endpoint | Description |
-|---|---|
-| `GET /api/movies` | Returns available movie titles |
-| `GET /api/recommend?movie=Avatar` | Returns similar movies |
-| `GET /api/metadata?title=Avatar` | Returns movie details from TMDB or the local cache |
+I also learned about working with APIs, handling API errors, and using caching to avoid fetching the same movie information repeatedly.
 
-## Future Improvements
+## What's next?
 
-- Improve the overall UI and mobile responsiveness.
-- Add movie detail popups.
-- Introduce a personal watchlist.
-- Improve search and filtering.
-- Deploy the application online.
+I'm planning to improve the UI, make the website more responsive, and maybe add a watchlist feature.
 
-## Acknowledgements
+---
 
-Movie metadata and images are provided through [TMDB](https://www.themoviedb.org/). This project uses the TMDB API but is not endorsed or certified by TMDB.
+Built as a learning project using Python, Machine Learning, and web development.
 
-## Author
-
-Developed by [ADIT700915](https://github.com/ADIT700915).
+Movie information and images are provided by TMDB. This project is not endorsed or certified by TMDB.
